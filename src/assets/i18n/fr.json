@@ -14,15 +14,15 @@
 			"link-more-url": "http://www.irceline.be/fr"
 		}
 	},
-	"annual-phenomenon-buttons": "Valeur moyenne annuelle modélisée pour ce position:",
+	"annual-phenomenon-buttons": "Valeur moyenne annuelle modélisée pour cette position:",
 	"belaqi-chart": {
-		"error": "Malheureusement, une erreur est survenue lors de la détermination du graphique."
+		"error": "Malheureusement, une erreur est survenue lors du chargement du graphique."
 	},
 	"belaqi-user-location-slider": {
 		"create-new-location": "Ajouter une nouvelle position",
 		"current-location": "Position actuelle",
-		"current-location-description": "Le lieu où vous vous trouvez actuellement...",
-		"open-user-location": "Modifier les positions actuels"
+		"current-location-description": "Le lieu où vous vous trouvez actuellement",
+		"open-user-location": "Modifier les positions actuelles"
 	},
 	"belaqi-wheel": {
 		"modelled-hint": "Modélisé pour cette position",
@@ -60,7 +60,7 @@
 			"header": "Période personnalisée",
 			"start": "Début"
 		},
-		"header": "changer le délai",
+		"header": "changer la période",
 		"predefined": {
 			"current-month": "Mois en cours",
 			"current-week": "Semaine en cours",
@@ -96,8 +96,8 @@
 	},
 	"home": {
 		"header": "Accueil",
-		"noAlert": "aucun rapport officiel concernant les périodes de pollution atmosphérique accrue",
-		"noAlertheader": "Actuellement pas d'alert:"
+		"noAlert": "Aucun rapport d'alerte de pollution régionale",
+		"noAlertheader": "Actuellement pas d'alerte:"
 	},
 	"info": {
 		"chart": {
@@ -106,7 +106,7 @@
 		"moreInfo": "Plus d'info",
 		"wheel": {
 			"link": "http://www.irceline.be/fr/belaqi",
-			"message": "Cet indicateur affiche l’indice de qualité de l’air BelAQI actuel pour votre position. Cet indice combine les concentrations modélisées des différents polluants en fonction de leur impact sur la santé."
+			"message": "Cet indicateur affiche l’indice BelAQI actuel pour votre position. Cet indice est une combinaison des concentrations modélisées des différents polluants et de leur impact sur la santé."
 		}
 	},
 	"intro": {
@@ -127,11 +127,11 @@
 		},
 		"prev-step": "Précédent",
 		"three": {
-			"addLocationToList": "Ajouter à la liste de positions",
-			"header": "Choisissez les localisations pour lesquels vous souhaitez recevoir des notifications personnalisées",
-			"locationLabelHint": "Renommer la position",
+			"addLocationToList": "Ajouter à la liste de localisations",
+			"header": "Choisissez les localisations pour lesquelles vous souhaitez recevoir des notifications personnalisées",
+			"locationLabelHint": "Renommer la localisation",
 			"locationLabelPlaceholder": "p.e. \"À la maison\", \"Travail\", \"École\"",
-			"showLocationList": "Voir les localisations actuels"
+			"showLocationList": "Voir les localisations actuelles"
 		},
 		"two": {
 			"header": "our quelle région souhaitez-vous recevoir des notifications officielles?"
@@ -143,7 +143,7 @@
 		"last-value-at": "Dernière valeur à"
 	},
 	"map": {
-		"configured-location": "Votre position configuré",
+		"configured-location": "Votre position configurée",
 		"current-location": "Votre position actuelle",
 		"dataset-selection-hint": "Veuillez sélectionner une ou plusieurs séries à afficher",
 		"geosearch": {
@@ -152,9 +152,9 @@
 		"header": "Carte",
 		"interpolated-map": "Carte interpolée",
 		"nearest-station": "Station de mesure la plus proche",
-		"no-legend": "aucune légende disponible",
+		"no-legend": "Aucune légende disponible",
 		"pollutant": {
-			"other": "autre"
+			"other": "Autre"
 		},
 		"show-in-diagram": "Afficher la série {{value}} dans le diagramme",
 		"time": {
@@ -177,9 +177,9 @@
 			"list-bc": "ou black carbon",
 			"list-no2": "ou dioxyde d'azote",
 			"list-o3": "ou ozone",
-			"list-pm10": "ou particules d'un diamètre inférieur à 10 micromètres",
-			"list-pm25": "ou particules d'un diamètre inférieur à 2,5 micromètres",
-			"text": "Les concentrations réelles mesurées des stations de mesure les plus proches sont données ici. Les différents polluants sont:"
+			"list-pm10": "ou particules d'un diamètre inférieur à 10 µm",
+			"list-pm25": "ou particules d'un diamètre inférieur à 2,5 µm",
+			"text": "Les concentrations mesurées des stations de mesure les plus proches sont données ici. Les différents polluants sont:"
 		}
 	},
 	"nearest-series-legend-slider": {
@@ -237,7 +237,7 @@
 	},
 	"personal-alerts": {
 		"background-service": {
-			"hint": "Surveille les positions configurés",
+			"hint": "Surveille les localisations configurées",
 			"title": "L'application s'exécute en arrière-plan"
 		}
 	},
@@ -269,7 +269,7 @@
 			"header": "A propos de l'application",
 			"version": "Version"
 		},
-		"common": "Généraux",
+		"common": "Paramètres généraux",
 		"header": "Paramètres",
 		"select-language": "Sélectionnez une langue",
 		"show-introduction": "Voir l'introduction",
@@ -295,7 +295,7 @@
 	"style-edit": {
 		"generalize": "Généraliser les données",
 		"header": "Changer le style de cette série",
-		"zeroBasedYAxe": "Série basée à zéro"
+		"zeroBasedYAxe": "L'axe commence à zéro"
 	},
 	"user-location-list": {
 		"header": "Liste des positions"
@@ -303,8 +303,8 @@
 	"user-location": {
 		"creation": {
 			"message": {
-				"added": "Position ajouté",
-				"exists": "Position existe déjà"
+				"added": "Position ajoutée",
+				"exists": "La position existe déjà"
 			}
 		}
 	},
@@ -316,7 +316,7 @@
 		},
 		"geolocation": {
 			"disabled": {
-				"header": "Aucune géolocalisation trouvée pour votre appareil",
+				"header": "Aucune géolocalisation n'a été trouvée pour votre appareil",
 				"hint": "Veuillez activer votre service de géolocalisation et actualiser l'application"
 			}
 		}
